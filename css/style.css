@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+.font-heading{
+    font-family: "Acme", sans-serif;
+}
+
+.icon{
+    height: 60px;
+}
+
+.theme-light{
+    background-color: white;
+}
+
+.theme-dark{
+    background-color: black;
+    color: white;
+}
+
+.footer-logo{
+    height: 100px;
+}
+
+.contact-img{
+    height: 25px;
+}
