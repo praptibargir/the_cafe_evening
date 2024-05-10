@@ -1,25 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-.font-heading{
+
+.font-heading {
     font-family: "Acme", sans-serif;
 }
 
-.icon{
+.icon {
     height: 60px;
 }
 
-.theme-light{
+.theme-light {
     background-color: white;
 }
 
-.theme-dark{
+.theme-dark {
     background-color: black;
     color: white;
 }
 
-.footer-logo{
+.footer-logo {
     height: 100px;
 }
 
-.contact-img{
+.contact-img {
     height: 25px;
+}
+
+.headerstart {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/starter.jpg);
+    position: relative;
+    margin-bottom: 45px;
+    padding: 210px 0 90px 0;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img1 {
+    height: 300px;
+}
+
+.background {
+    color: black;
+    background-color: #e7e6e6;
+}
+
+@media screen and (min-width:700px) and (max-width:1555px) {
+
+    .gall{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gall-sm {
+        height: 100px;
+        display: block;
+        margin:10px auto;
+        border-radius: 10px;
+    }
+
+    .main-img {
+        height: 450px;
+        margin: 10px 20px;
+        box-shadow: 0 0 10px 10px #a3a3a3;
+        border-radius: 20px;
+    }
+
 }
