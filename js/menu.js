@@ -9,12 +9,11 @@ function darkMode() {
 }
 
 function offer() {
-    let span = document.getElementById('offer');
-    if (span.style.display === 'none') {
-      span.style.display = 'inline';
+    let blink = document.getElementById('offer');
+    if (blink.style.display === 'none') {
+      blink.style.display = 'inline';
     } else {
-      span.style.display = 'none'; 
+      blink.style.display = 'none'; 
     }
-  }
-  
-  setInterval(offer, 1000);
+  }  
+setInterval(offer, 1000);

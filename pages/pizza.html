@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE CAFE EVENING</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -30,13 +30,13 @@
                         <a class="nav-link" href="aboutus.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="events.html">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contactus.html">Contact</a>
+                        <a class="nav-link" href="contactus.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -54,36 +54,48 @@
         </div>
     </nav>
     <!--End of header-->
-
-    <!--form-->
-    
-    <!--end of form-->
-    <div class="reviewbody">  
-        <div class="card">
-            <h1 class="sedan-sc-regular">Rate Our Service</h1>
-            
-            <div class="review_card lato-bold-italic">
-                <span class="review">Write Review Here</span>
-                <textarea class="ta" rows="2" cols="15" required></textarea>
-            </div> 
-    
-            <br />
-    
+    <!-- Page Header Start -->
+    <div class="headerstart">
         <div class="container">
-            <img class="star" id="s1" src="../icon/star.png" alt="star_img" onclick="star(1)">
-            <img class="star" id="s2" src="../icon/star.png" alt="star_img" onclick="star(2)">
-            <img class="star" id="s3" src="../icon/star.png" alt="star_img" onclick="star(3)">
-            <img class="star" id="s4" src="../icon/star.png" alt="star_img" onclick="star(4)">
-            <img class="star" id="s5" src="../icon/star.png" alt="star_img" onclick="star(5)">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-light font-heading fs-2">Menu</h2>
+                </div>
+                <div class="col-12">
+                    <a href="../index.html" class="text-light text-decoration-none">Home /</a>
+                    <a href="menu.html" class="text-light text-decoration-none">Menu /</a>
+                    <a href="pizza.html" class="text-light text-decoration-none">Pizza</a>
+                </div>
+            </div>
         </div>
-    
-            <h3 id="rating" class=" lato-bold-italic rating">
-                Rating is: 0/5
-            </h3>
-    
-            <button class="sbtn lato-bold-italic" id="submit_btn" onclick="submit()">Submit</button>
+    </div>
+    <!-- Page Header End -->
+
+    <!--pizza container-->
+    <h1 class="text-center fs-1 font-heading">Pizza</h1>
+    <div class="starter p-2 mx-5 border border-1 rounded border-dark">
+
+        <div>
+            <img src="../images/pizzaVariety.jpg" class="mx-2 subimg2" />
         </div>
-  </div>
+        <div>
+            <video height="480px" controls autoplay muted>
+                <source src="../video/Pizza.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="sub">
+            <div>
+                <img src="../images/pizza3.jpg" class="mx-2 subimg" />
+            </div>
+            <div>
+                <img src="../images/pizza1.jpg" class="mx-2 subimg" />
+            </div>
+        </div>
+    </div>
+    <!--end of pizza container-->
+    <!--order-->
+    <h1 class="text-center fs-2 m-3 font-heading">Place your order now!!</h1>
+    <!--end of order-->
 
     <!--footer-->
     <div class="bg-dark bg-gradient text-light p-4">
@@ -97,24 +109,28 @@
                 <div class="d-flex flex-row justify-content-evenly">
                     <div class="mt-2">
                         <a href="https://www.facebook.com/p/The-Cafe-Evening-100064168686089/" target="_blank"
-                            class="text-decoration-none text-light"><img class="contact-img" src="../icon/facebook.png" />
+                            class="text-decoration-none text-light"><img class="contact-img"
+                                src="../icon/facebook.png" />
                             Facebook</a><br />
                     </div>
                     <div class="mt-2">
                         <a href="https://www.instagram.com/thecafeevening/" target="_blank"
-                            class="text-decoration-none text-light"><img class="contact-img" src="../icon/instagram.png" />
+                            class="text-decoration-none text-light"><img class="contact-img"
+                                src="../icon/instagram.png" />
                             Instagram</a><br />
                     </div>
                     <div class="mt-2">
-                        <a href="https://www.justdial.com/Pune/The-Cafe-Evening-Near-Ivy-Estate-Wagholi/020PXX20-XX20-200108154050-J8H6_BZDET" target="_blank"
-                            class="text-decoration-none text-light"><img class="contact-img" src="../icon/justdial.png" />
+                        <a href="https://www.justdial.com/Pune/The-Cafe-Evening-Near-Ivy-Estate-Wagholi/020PXX20-XX20-200108154050-J8H6_BZDET"
+                            target="_blank" class="text-decoration-none text-light"><img class="contact-img"
+                                src="../icon/justdial.png" />
                             Justdial</a><br />
                     </div>
                 </div>
                 <div class="d-flex flex-row justify-content-evenly">
                     <div class="mt-2">
                         <a href="https://www.zomato.com/pune/the-cafe-evening-2-wagholi" target="_blank"
-                            class="text-decoration-none text-light"> <img class="contact-img" src="../icon/zomato.png" />
+                            class="text-decoration-none text-light"> <img class="contact-img"
+                                src="../icon/zomato.png" />
                             Zomato</a><br />
                     </div>
                     <div class="mt-2">
@@ -149,7 +165,7 @@
     </div>
     <!--end of footer-->
 
-    <script src="../js/contactus.js"></script>
+    <script src="../js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
