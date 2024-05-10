@@ -1,0 +1,15 @@
+@media screen and (min-width:600px) {
+    .login {
+        width: 40%;
+        padding:30px;
+        margin:10px 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .login {
+        width: 90%;
+        padding:30px;
+        margin:10px 20px;
+    }
+}
