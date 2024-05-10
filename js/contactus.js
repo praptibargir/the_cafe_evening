@@ -61,5 +61,19 @@ function star(n)
     }
 
 function submit(){
-    alert("Do you want to conform Submit feedback ?");
+    alert("Thankyou for rating us!");
+    const star1 = document.getElementById('s1');
+    const star2 = document.getElementById('s2');
+    const star3 = document.getElementById('s3');
+    const star4 = document.getElementById('s4');
+    const star5 = document.getElementById('s5');
+    const rating = document.getElementById('rating');
+
+    star1.src="../icon/star.png";
+    star2.src="../icon/star.png";
+    star3.src="../icon/star.png";
+    star4.src="../icon/star.png";
+    star5.src="../icon/star.png";
+    rating.innerText="Rating is: 0/5";
+
 }
