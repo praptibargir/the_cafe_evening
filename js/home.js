@@ -8,6 +8,16 @@ function darkMode() {
     theme.className = "theme-dark";
 }
 
+function change1(){
+    const image=document.getElementById("image-abt");
+    image.src="../images/abt1.jpg";
+}
+
+function change2(){
+    const image=document.getElementById("image-abt");
+    image.src="../images/abt2.jpg";
+}
+
 function img1() {
     const slider = document.getElementById("slider");
     slider.innerHTML = '<div class="card-group" id="slider"><div class="card"><img src="images/slider1.jpg" class="img1 card-img-top" alt="..."></div></div>'
@@ -26,33 +36,79 @@ setTimeout(img1, 5000);
 setTimeout(img2, 7000);
 setTimeout(img3, 9000);
 
-function gall1(){
-    const image=document.getElementById("mainimg");
-    image.src="../images/people2.jpg";
+function gall1() {
+    const image = document.getElementById("mainimg");
+    image.src = "../images/people2.jpg";
 }
 
-function gall2(){
-    const image=document.getElementById("mainimg");
-    image.src="../images/people1.jpg";
+function gall2() {
+    const image = document.getElementById("mainimg");
+    image.src = "../images/people1.jpg";
 }
 
-function gall3(){
-    const image=document.getElementById("mainimg");
-    image.src="../images/test1.jpg";
+function gall3() {
+    const image = document.getElementById("mainimg");
+    image.src = "../images/people5.jpg";
 }
 
-function gall4(){
-    const image=document.getElementById("mainimg");
-    image.src="../images/people4.jpg";
+function gall4() {
+    const image = document.getElementById("mainimg");
+    image.src = "../images/people4.jpg";
 }
 
-function gall5(){
-    const image=document.getElementById("mainimg");
-    image.src="../images/people3.jpg";
+function gall5() {
+    const image = document.getElementById("mainimg");
+    image.src = "../images/people3.jpg";
 }
 
-function gall6(){
-    const image=document.getElementById("mainimg");
-    image.src="../images/test2.jpg";
+function gall6() {
+    const image = document.getElementById("mainimg");
+    image.src = "../images/people6.jpg";
 }
+
+function test1() {
+    const image = document.getElementById("test-image");
+    const subheading = document.getElementById("test-subheading");
+    const text = document.getElementById("test-text");
+    const name= document.getElementById("test-name");
+    image.src = "../images/test1.jpg";
+    subheading.innerText = "Great place";
+    text.innerText = "The ambiance at Café Evening is simply magical. From the soft glow of the lights to the cozy seating arrangements, it's the perfect place to unwind after a long day.And let's not forget the coffee – absolutely divine!";
+    name.innerText="~Anjali Dhamdhere";
+}
+
+function test2() {
+    const image = document.getElementById("test-image");
+    const subheading = document.getElementById("test-subheading");
+    const text = document.getElementById("test-text");
+    const name= document.getElementById("test-name");
+    image.src = "../images/test3.webp";
+    subheading.innerText = "Amazing Taste";
+    text.innerText = "As a coffee enthusiast, I've tried countless cafés, but none compare to Café Evening. The quality of their brews is unmatched, and the friendly staff always make me feel welcome. It's become my go-to spot for caffeine fixes and relaxation.";
+    name.innerText="~Saurabh Sharma";
+}
+
+function test3() {
+    const image = document.getElementById("test-image");
+    const subheading = document.getElementById("test-subheading");
+    const text = document.getElementById("test-text");
+    const name= document.getElementById("test-name");
+    image.src = "../images/test2.jpg";
+    subheading.innerText = "Memorable Birthday";
+    text.innerText = "Birthday celebrations at Café Evening are pure magic! The cozy atmosphere, delicious treats, and friendly staff made my special day unforgettable. Highly recommend!!";
+    name.innerText="~Nikita Satav";
+}
+
+function test4() {
+    const image = document.getElementById("test-image");
+    const subheading = document.getElementById("test-subheading");
+    const text = document.getElementById("test-text");
+    const name= document.getElementById("test-name");
+    image.src = "../images/test4.webp";
+    subheading.innerText = "Inviting Atmosphere";
+    text.innerText = "At Café Evening, every moment feels like a celebration. Whether it's a quiet afternoon spent with a good book or a lively gathering with friends, the café's inviting atmosphere sets the stage for memorable experiences";
+    name.innerText="~Ajay Kajale";
+}
+
+
 

@@ -69,7 +69,7 @@
     <h2 class="font-heading text-center fs-2 text-warning"> [ Slice of Taste ] </h2>
     <div class="d-flex row m-4 background rounded">
         <div class="col-lg-4 col-md-12 col-sm-12 d-flex flex-column justify-content-center">
-            <img src="images/outer.PNG" class="img-fluid rounded" />
+            <img src="images/outer.PNG" class="img-fluid rounded" id="image-abt" onclick="change1()" ondblclick="change2()"/>
         </div>
         <div class="col-lg-8 col-md-12 col-sm-12 my-auto">
             <h2 class="font-heading text-center fs-2 text-dark mt-2"> About Us </h2>
@@ -91,7 +91,7 @@
                 to satisfy every palate.
             </p>
             <a href="pages/aboutus.html" class="text-decoration-none"><button type="button"
-                    class="btn btn-outline-dark d-block my-2 mx-auto ">Know More About us</button></a>
+                    class="btn btn-outline-dark d-block my-2 mx-auto " >Know More About us</button></a>
         </div>
 
     </div>
@@ -103,16 +103,39 @@
         <div class="option">
             <img src="images/people2.jpg" class="gall-sm" onclick="gall1()" />
             <img src="images/people1.jpg" class="gall-sm" onclick="gall2()" />
-            <img src="images/test1.jpg" class="gall-sm" onclick="gall3()" />
+            <img src="images/people5.jpg" class="gall-sm" onclick="gall3()" />
         </div>
         <img src="images/people1.jpg" class="main-img" id="mainimg" />
         <div class="option">
             <img src="images/people4.jpg" class="gall-sm" onclick="gall4()" />
             <img src="images/people3.jpg" class="gall-sm" onclick="gall5()" />
-            <img src="images/test2.jpg" class="gall-sm" onclick="gall6()" />
+            <img src="images/people6.jpg" class="gall-sm" onclick="gall6()" />
         </div>
     </div>
     <!--end of gallery-->
+
+    <!--testimonial-->
+    <h2 class="text-center fs-1 font-heading mt-5">Testimonials</h2>
+    <div class="test-card background">
+        <div>
+            <img src="images/test1.jpg" class="test-img" id="test-image" />
+        </div>
+        <div class="test-text">
+            <h3 class="fs-3 text-danger" id="test-subheading">Great Place</h3>
+            <p class="card-text text-center" id="test-text">The ambiance at Café Evening is simply magical. From the
+                soft glow of the lights to the cozy seating arrangements, it's the perfect place to unwind after a long
+                day. And let's not forget the coffee – absolutely divine!
+            </p>
+            <p id="test-name" class="text-primary-emphasis">~Anjali Dhamdhere</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button type="button" class="selector" id="btn-1" onclick="test1()"> </button>
+        <button type="button" class="selector" id="btn-2" onclick="test2()"> </button>
+        <button type="button" class="selector" id="btn-3" onclick="test3()"> </button>
+        <button type="button" class="selector" id="btn-4" onclick="test4()"> </button>
+    </div>
+    <!--end of testimonial-->
 
     <!--order-->
     <div class="mt-4">

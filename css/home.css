@@ -139,3 +139,48 @@
     }
 
 }
+.test-img{
+    height: 300px;
+    display: block;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.test-card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 30px;
+}
+
+.test-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.selector{
+    border:solid 1x black;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 5px;
+    margin: 2px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.cont-img:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #a3a3a3;
+    padding: 5px;
+}
