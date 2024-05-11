@@ -33,9 +33,6 @@
                         <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="contactus.html">Contact</a>
                     </li>
                 </ul>
@@ -76,31 +73,48 @@
     </div>
     <!-- Page Header End -->
 
-    <!--pizza container-->
-    <h1 class="text-center fs-1 font-heading">Pizza</h1>
-    <div class="starter p-2 mx-5 border border-1 rounded border-dark">
-
-        <div>
-            <img src="../images/pizzaVariety.jpg" class="mx-2 subimg2" />
-        </div>
-        <div>
-            <video height="480px" controls autoplay muted>
-                <source src="../video/Pizza.mp4" type="video/mp4" />
-            </video>
-        </div>
-        <div class="sub">
-            <div>
-                <img src="../images/pizza3.jpg" class="mx-2 subimg" />
-            </div>
-            <div>
-                <img src="../images/pizza1.jpg" class="mx-2 subimg" />
-            </div>
-        </div>
-    </div>
-    <!--end of pizza container-->
     <!--order-->
-    <h1 class="text-center fs-2 m-3 font-heading">Place your order now!!</h1>
+    <div class="container1 container border border-dark my-3 mx-auto">
+        <h1 class="text-center fs-1 font-heading">Pizza</h1>
+        <!--pizza container-->
+
+        <div class="starter p-2 mx-5">
+            <div>
+                <img src="../images/pizzaVariety.jpg" class="mx-2 subimg2" />
+            </div>
+            <div>
+                <video height="480px" controls autoplay muted>
+                    <source src="../video/Pizza.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="sub">
+                <div>
+                    <img src="../images/pizza3.jpg" class="mx-2 subimg" />
+                </div>
+                <div>
+                    <img src="../images/pizza1.jpg" class="mx-2 subimg" />
+                </div>
+            </div>
+        </div>
+        <!--end of pizza container-->
+        <p>Indulge in our mouthwatering pizza made with fresh ingredients and topped with your favorite flavors.</p>
+        <p>Cost per Pizza: ₹250/-</p>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="col-auto me-2">
+                <input type="number" id="quantity" class="form-control" aria-describedby="passwordHelpInline"
+                    min="1" placeholder="Enter the quantity">
+            </div>
+            <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">
+                    <p> Total Cost: <span id="total">₹250</span></p>
+                </label>
+            </div>
+        </div>
+        <button class="btn btn-dark btn-lg" onclick="calculateTotal()">Calculate Bill</button>
+    </div>
     <!--end of order-->
+
+
 
     <!--footer-->
     <div class="bg-dark bg-gradient text-light p-4">

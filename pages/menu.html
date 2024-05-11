@@ -33,9 +33,6 @@
                         <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="contactus.html">Contact</a>
                     </li>
                 </ul>
@@ -79,7 +76,22 @@
     <!--menu-->
     <div class="container">
         <h1 class="text-center mt-5">Cafe Evening Menu</h1>
-        <div id="menu" class="mt-4"></div>
+        <div class="dropdown float-end">
+            <button class="btn btn-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Filter
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#drinks">Drinks</a></li>
+                <li><a class="dropdown-item" href="#food">Food</a></li>
+            </ul>
+        </div><br/><br/>
+        <h2 class="text-center fs-2 font-heading bg-secondary bg-gradient text-light p-2 d-block mx-auto my-1"
+            id="drinks">Drinks</h2>
+        <div id="menu1" class="mt-4"></div>
+        <h2 class="text-center fs-2 font-heading bg-secondary bg-gradient text-light p-2 d-block mx-auto" id="food">Food
+        </h2>
+        <div id="menu2" class="mt-4"></div>
     </div>
     <!--end of menu-->
 
