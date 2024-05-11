@@ -114,3 +114,9 @@ function calculateTotal() {
   let totalCost = quantity * 250;
   document.getElementById("total").innerText = "₹" + totalCost;
 }
+
+function calculateTotal1() {
+  let quantity = document.getElementById("quantity1").value;
+  let totalCost = quantity * 350;
+  document.getElementById("total1").innerText = "₹" + totalCost;
+}
