@@ -126,3 +126,21 @@ function calculateTotal2() {
   let totalCost = quantity * 150;
   document.getElementById("total2").innerText = "₹" + totalCost;
 }
+
+function calculateTotal3() {
+  let quantity = document.getElementById("quantity3").value;
+  let totalCost = quantity * 120;
+  document.getElementById("total3").innerText = "₹" + totalCost;
+}
+
+function calculateTotal4() {
+  let quantity = document.getElementById("quantity4").value;
+  let totalCost = quantity * 80;
+  document.getElementById("total4").innerText = "₹" + totalCost;
+}
+
+function calculateTotal5() {
+  let quantity = document.getElementById("quantity5").value;
+  let totalCost = quantity * 180;
+  document.getElementById("total5").innerText = "₹" + totalCost;
+}
