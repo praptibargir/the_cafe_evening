@@ -21,7 +21,7 @@ setInterval(offer, 1000);
 
 let menuItems1 = [
   {
-    name: "Cold Coffe",
+    name: "Coffe",
     description: "Chill out with our refreshing cold coffee at Café Evening – a delightful blend of bold flavors to energize your day!",
     cost: "₹80/-",
     image: "../images/coldCoffe.jpg",
