@@ -33,6 +33,9 @@
     .subimg2{
         height: 500px;
     }
+    .cost{
+        flex-direction: row;
+    }
 
 }
 
@@ -60,6 +63,9 @@
         height: 300px;
         margin: 10px;
     }
+    .cost{
+        flex-direction: row;
+    }
 
 }
 
@@ -86,6 +92,9 @@
         height: 300px;
         margin: 10px;
     }
+    .cost{
+        flex-direction: row;
+    }
 }
 
 
@@ -110,6 +119,9 @@
     .subimg2{
         height: 300px;
         margin: 10px;
+    }
+    .cost{
+        flex-direction: column;
     }
 }
 

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CAFE EVENING</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body id="body">
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg shadow bg-light">
+        <div class="container-fluid d-flex justify-content-evenly">
+            <a class="navbar-brand" href="#"><img src="../icon/logo2.jpg" class="icon"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-underline mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="login.html">
+                <button class="btn" type="button">
+                    <img src="../icon/avatar.png" height="50px" />
+                </button>
+            </a>
+            <div class="btn-group dropstart bg-light">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../icon/darklightmode.png" height="50px" />
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" onclick="lightMode()"><i class="fa-solid fa-sun"
+                                style="color: #FFD43B;"></i> Light</a></li>
+                    <li><a class="dropdown-item" onclick="darkMode()"><i class="fa-solid fa-moon"
+                                style="color: #000000;"></i> Dark</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of header-->
+    <!-- Page Header Start -->
+    <div class="headerstart">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-light font-heading fs-2">Menu</h2>
+                </div>
+                <div class="col-12">
+                    <a href="../index.html" class="text-light text-decoration-none">Home /</a>
+                    <a href="menu.html" class="text-light text-decoration-none">Menu /</a>
+                    <a hrfries.html" class="text-light text-decoration-none">Fries</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!--order-->
+    <div class="container1 container border border-dark my-3 mx-auto">
+        <h1 class="text-center fs-1 font-heading">Fries </h1>
+        <!--pizza container-->
+
+        <div class="starter p-2 mx-5">
+            <div>
+                <img src="../images/fries1.jpg" class="mx-2 subimg2" />
+            </div>
+            <div>
+                <video height="480px" controls autoplay muted>
+                    <source src="../video/cheesyFries.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div>
+                <img src="../images/fries2.jpg" class="mx-2 subimg2" />
+            </div>
+            
+        </div>
+        <!--end of pizza container-->
+        <p>Craving a crispy delight? Dive into our golden fries at Café Evening – the perfect side to elevate your meal experience!</p>
+        <p>Cost per fries: ₹150/-</p>
+        <div class="d-flex cost justify-content-center">
+            <div class="col-auto me-2">
+                <input type="number" id="quantity2" class="form-control" aria-describedby="passwordHelpInline"
+                    min="1" placeholder="Enter the quantity">
+            </div>
+            <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">
+                    <p> Total Cost: <span id="total2"> ₹150/-</span></p>
+                </label>
+            </div>
+        </div>
+        <button class="btn btn-dark btn-lg" onclick="calculateTotal2()">Calculate Bill</button>
+    </div>
+    <!--end of order-->
+
+
+
+    <!--footer-->
+    <div class="bg-dark bg-gradient text-light p-4">
+        <div class="row">
+            <div class="col-lg-4 my-auto">
+                <img class="d-flex flex-column justify-content-evenly footer-logo" src="../icon/logo2.jpg" />
+                <p class="mt-2"> </p>
+            </div>
+            <div class="col-lg-5 my-auto text-center">
+                <p class="">Get in Touch with us:</p>
+                <div class="d-flex flex-row justify-content-evenly">
+                    <div class="mt-2">
+                        <a href="https://www.facebook.com/p/The-Cafe-Evening-100064168686089/" target="_blank"
+                            class="text-decoration-none text-light"><img class="contact-img"
+                                src="../icon/facebook.png" />
+                            Facebook</a><br />
+                    </div>
+                    <div class="mt-2">
+                        <a href="https://www.instagram.com/thecafeevening/" target="_blank"
+                            class="text-decoration-none text-light"><img class="contact-img"
+                                src="../icon/instagram.png" />
+                            Instagram</a><br />
+                    </div>
+                    <div class="mt-2">
+                        <a href="https://www.justdial.com/Pune/The-Cafe-Evening-Near-Ivy-Estate-Wagholi/020PXX20-XX20-200108154050-J8H6_BZDET"
+                            target="_blank" class="text-decoration-none text-light"><img class="contact-img"
+                                src="../icon/justdial.png" />
+                            Justdial</a><br />
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-evenly">
+                    <div class="mt-2">
+                        <a href="https://www.zomato.com/pune/the-cafe-evening-2-wagholi" target="_blank"
+                            class="text-decoration-none text-light"> <img class="contact-img"
+                                src="../icon/zomato.png" />
+                            Zomato</a><br />
+                    </div>
+                    <div class="mt-2">
+                        <a href="https://www.swiggy.com/restaurants/the-cafe-evening-baif-road-wagholi-pune-168766"
+                            target="_blank" class="text-decoration-none text-light"><img class="contact-img"
+                                src="../icon/swiggy.png" />
+                            Swiggy</a><br />
+                    </div>
+                    <div class="mt-2">
+                        <a href="https://magicpin.in/Pune/Wagholi/Restaurant/The-Cafe-Evening/store/361349/menu/"
+                            target="_blank" class="text-decoration-none text-light"><img class="contact-img"
+                                src="../icon/magicpin.webp" />
+                            Magicpin</a><br />
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 d-flex flex-column my-auto mt-4">
+                <a><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                    Biaf Road, Wagholi, Pune- 412207</a>
+                <br />
+                <a href="tel:7387882087" class="text-decoration-none text-light "><i class="fa-solid fa-phone"
+                        style="color: #ffffff;"></i> +91 73878 82087</a><br />
+                <a href="mailto:admin@unityuplift.org" class="text-decoration-none text-light"><i
+                        class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                    admin@thecafeevening.org</a>
+            </div>
+        </div>
+        <hr />
+        <p class="text-center">Copyright © 2024 <a href="index.html" class="link-warning text-decoration-none">The Cafe
+                Evening</a></p>
+    </div>
+    <!--end of footer-->
+
+    <script src="../js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/14a1a7dd00.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
