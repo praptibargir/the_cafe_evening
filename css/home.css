@@ -187,16 +187,6 @@
     border-radius: 30px;
 }
 
-.test-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 10px auto;
-    border-radius: 30px;
-}
-
 .test-text {
     display: flex;
     flex-direction: column;
@@ -223,4 +213,15 @@
     border-radius: 10px;
     box-shadow: 0 0 10px 5px #a3a3a3;
     padding: 5px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.menu-item{
+    box-shadow: 0 0 10px 5px #a3a3a3;
 }
