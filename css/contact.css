@@ -13,7 +13,7 @@
     .cntct{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content:space-evenly;
         align-items: center;
     } 
 }
@@ -33,7 +33,7 @@
     .cntct{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content:space-evenly;
         align-items: center;
     }  
 }
