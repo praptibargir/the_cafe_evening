@@ -1,16 +1,45 @@
-.star {
-    height: 70px;
-    padding: 10px;
-    margin-bottom: 20px;
-    cursor: pointer;
+@media screen and (min-width:600px) {
+    .contact {
+        width: 40%;
+        padding:30px;
+        margin:20px;
+    }
+    .star {
+        height: 70px;
+        padding: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .cntct{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    } 
 }
-@media screen and (max-width:500px){
+
+@media screen and (max-width:600px) {
+    .contact {
+        width: 90%;
+        padding:30px;
+        margin:20px;
+    }
     .star {
         height: 50px;
         padding: 5px;
         margin-bottom: 10px;
         cursor: pointer;
-    }
+    }  
+    .cntct{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+
+.text-yellow{
+    color: rgb(255, 255, 3);
 }
 
 

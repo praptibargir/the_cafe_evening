@@ -8,6 +8,19 @@ function darkMode() {
     theme.className = "theme-dark";
 }
 
+
+function changehead(){
+    const head=document.getElementById("heading");
+    head.innerHTML='<h1 class="card-heading text-yellow text-center" id="heading">Contact Form</h1>'
+}
+setInterval(changehead,500);
+
+function changehead1(){
+    const head=document.getElementById("heading");
+    head.innerHTML='<h1 class="card-heading text-dark text-center" id="heading">Contact Form</h1>'
+}
+setInterval(changehead1,1000);
+
 function star(n)
 {
     const star1 = document.getElementById('s1');
@@ -76,4 +89,17 @@ function submit(){
     star5.src="../icon/star.png";
     rating.innerText="Rating is: 0/5";
 
+}
+
+function validateContact() {
+    let fullName = document.getElementById('email').value;
+    let email = document.getElementById('message').value;
+
+    // Simple validation
+    if (message === '' || email === '') {
+        alert('Please fill in all fields.');
+    } else {
+        // Perform further validation or form submission
+        alert('Form submitted!');
+    }
 }

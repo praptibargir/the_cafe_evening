@@ -58,12 +58,28 @@
     <!--End of header-->
 
     <!--form-->
+    <div class="container background p-3 d-flex cntct">
+        <div class="card contact shadow">
+            <h1 class="card-heading text-center" id="heading">Contact Form</h1>
+            <div class="card-body">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                </div><br />
+                <div class="form-group">
+                    <input type="text" class="form-control" id="message" placeholder="Enter message" required>
+                </div><br />
+                <button type="button" class="btn btn-dark btn-block d-block mx-auto" onclick="validateContact()">Send
+                </button>
+            </div>
+        </div>
+        <div class="rounded">
+            
+        </div>
+    </div>
 
-    <!--end of form-->
     <div class="d-flex flex-column justify-content-center align-items-center ">
         <div class="card m-3 shadow p-3">
             <h1 class="text-center font-heading mt-5">Rate Our Service</h1>
-
             <div class="d-flex justify-content-center">
                 <img class="star" id="s1" src="../icon/star.png" alt="star_img" onclick="star(1)">
                 <img class="star" id="s2" src="../icon/star.png" alt="star_img" onclick="star(2)">
@@ -75,10 +91,13 @@
             <h3 id="rating" class="text-center">
                 Rating is: 0/5
             </h3>
-            <br/>
+            <br />
             <button type="button" class="btn btn-outline-dark" onclick="submit()">Submit</button>
         </div>
     </div>
+    </div>
+    <!--end of form-->
+
 
     <!--footer-->
     <div class="bg-dark bg-gradient text-light p-4">
