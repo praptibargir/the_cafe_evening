@@ -204,3 +204,26 @@ function imagechange(quantity) {
       break;
   }
 }
+
+const eventDate = new Date('2024-05-30T00:00:00+05:30');
+function updateCountdown() {
+  const currentDate = new Date();
+  const difference = eventDate - currentDate;
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+  document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+function offer1() {
+  let blink = document.getElementById('offer1');
+  if (blink.style.display === 'none') {
+    blink.style.display = 'inline';
+  } else {
+    blink.style.display = 'none';
+  }
+}
+setInterval(offer1, 1000);
