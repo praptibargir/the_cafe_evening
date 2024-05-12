@@ -36,6 +36,9 @@
     .cost{
         flex-direction: row;
     }
+    .menuimg{
+        height: 500px;
+    }
 
 }
 
@@ -66,6 +69,9 @@
     .cost{
         flex-direction: row;
     }
+    .menuimg{
+        height: 500px;
+    }
 
 }
 
@@ -95,6 +101,9 @@
     .cost{
         flex-direction: row;
     }
+    .menuimg{
+        height: 300px;
+    }
 }
 
 
@@ -122,6 +131,9 @@
     }
     .cost{
         flex-direction: column;
+    }
+    .menuimg{
+        height: 280px;
     }
 }
 
@@ -161,3 +173,19 @@ p {
 .wid{
     width: 30%;
 }
+
+.quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.incdec{
+    height: 30px;
+}
+
+.menuimg{
+    display: block;
+    margin: 5px auto;
+}
+
