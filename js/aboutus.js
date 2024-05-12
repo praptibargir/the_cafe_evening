@@ -8,6 +8,24 @@ function darkMode() {
     theme.className = "theme-dark";
 }
 
+function inc(){
+    const num=document.getElementById("num1");
+    let number=parseInt(num.innerText);
+    if (number<1000){
+      num.innerText=++number;
+      alert("Thankyou For Liking");
+    } 
+  }
+  
+  function dec(){
+    const num=document.getElementById("num2");
+    let number=parseInt(num.innerText);
+    if (number<=1000){
+      num.innerText=++number;  
+      alert("We apologise for your inconvenience");  
+    }
+  }
+
 function event1() {
     const event = document.getElementById("imgss");
     event.innerHTML = '<div id="imgss" class="gall mx-4 my-5"><div class="option"><img src="../images/bday1.jpg" class="gall-sm" onclick="gall1()" /><img src="../images/bday2.jpg" class="gall-sm" onclick="gall2()" /><img src="../images/bday3.jpg" class="gall-sm" onclick="gall3()" /></div><img src="../images/bday1.jpg" class="main-img" id="mainimg" /></div>'
@@ -20,7 +38,7 @@ function cafe() {
 
 function rooftop() {
     const event = document.getElementById("imgss");
-    event.innerHTML = '<div id="imgss" class="gall mx-4 my-5"><div class="option"><img src="../images/people2.jpg" class="gall-sm" onclick="gall1()" /><img src="../images/people1.jpg" class="gall-sm" onclick="gall2()" /><img src="../images/people5.jpg" class="gall-sm" onclick="gall3()" /></div><img src="../images/people1.jpg" class="main-img" id="mainimg" /></div>'
+    event.innerHTML = '<div class="m-1"><video class="main-img" controls autoplay muted><source src="../video/roofTop.mp4" type="video/mp4" /></video></div><div><video height="480px" class="main-vdo" controls autoplay muted><source src="../video/rooftopnight.mp4" type="video/mp4" /></video></div>'
 }
 
 function gall1() {
