@@ -13,5 +13,16 @@
 }
 
 .text-yellow{
-    color: yellow;
+    color: #ffff66;
+}
+
+.headerstarts {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/starter.jpg);
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
