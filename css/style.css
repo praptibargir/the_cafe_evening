@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Calligraffitti&family=Jaro:opsz@6..72&family=Rubik+Glitch&display=swap');
 
 
 .font-heading {
     font-family: "Acme", sans-serif;
+}
+
+.font-heading2 {
+    font-family: "Jaro", sans-serif;
 }
 
 .icon {
@@ -29,7 +34,6 @@
 .headerstart {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/starter.jpg);
     position: relative;
-    margin-bottom: 45px;
     padding: 210px 0 90px 0;
     text-align: center;
     background-attachment: fixed;
@@ -44,14 +48,14 @@
     margin: 10px 20px;
 }
 
-@media screen and (min-width:500px) and (max-width:1550px){
-    .header-img{
+@media screen and (min-width:500px) and (max-width:1550px) {
+    .header-img {
         height: 50px;
     }
 }
 
-@media screen and  (max-width:500px){
-    .header-img{
+@media screen and (max-width:500px) {
+    .header-img {
         height: 30px;
     }
 }
