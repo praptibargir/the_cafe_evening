@@ -105,8 +105,11 @@ function handleSubmitOrder() {
 
 function renderOrders() {
     const orderList = document.getElementById('orderList');
+    const totalCostValue = document.getElementById('totalCostValue');
+    let totalCost = 0;
     orderList.innerHTML = '';
     orders.forEach((order, index) => {
+        totalCost += order.cost;
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${index + 1}</td>
@@ -117,7 +120,9 @@ function renderOrders() {
         `;
         orderList.appendChild(row);
     });
+    totalCostValue.textContent = totalCost;
 }
+
 
 function deleteOrder(index) {
     orders.splice(index, 1);
