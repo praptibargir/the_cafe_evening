@@ -205,7 +205,7 @@ function imagechange(quantity) {
   }
 }
 
-const eventDate = new Date('2024-05-30T00:00:00+05:30');
+const eventDate = new Date('2024-06-15T00:00:00+05:30');
 function updateCountdown() {
   const currentDate = new Date();
   const difference = eventDate - currentDate;

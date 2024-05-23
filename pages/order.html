@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE CAFE EVENING</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/login.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -27,13 +27,13 @@
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="aboutus.html">About</a>
+                        <a class="nav-link" href="aboutus.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="order.html">Order</a>
+                        <a class="nav-link active" aria-current="page" href="order.html">Order</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contactus.html">Contact</a>
@@ -65,124 +65,102 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-light font-heading fs-2">About Us</h2>
+                    <h2 class="text-light font-heading fs-2">Order</h2>
                 </div>
                 <div class="col-12">
                     <a href="../index.html" class="text-light text-decoration-none">Home /</a>
-                    <a href="aboutus.html" class="text-light text-decoration-none">About Us</a>
+                    <a href="order.html" class="text-light text-decoration-none">Order</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Page Header End -->
 
-    <div class="background p-3 mt-5">
-        <h1 class="text-center font-heading mt-3">About Us</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="../images/cafe8.jpg" class="card-img-top" alt="...">
-                
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="../images/menu.jpg" class="card-img-top" alt="...">
-                
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="../images/meal1(2).jpg" class="card-img-top" alt="...">                
-              </div>
-            </div>
-          </div>
-        <p class="text-center fs-5 font-heading m-2">
-            Established in 2018 by Akash Agrawal, Cafe Evening is a cozy retreat nestled in the heart of Biaf Road,
-            Wagholi.
-            We pride ourselves on offering a warm and inviting atmosphere where friends, families, and colleagues
-            can
-            gather
-            to unwind and indulge in delectable treats.
-        </p>
-        <p class="text-center fs-5 font-heading m-2">
-            At Cafe Evening, we're passionate about serving quality coffee, mouthwatering snacks, and delightful
-            desserts.
-            Our menu features a diverse selection of beverages, including specialty coffees, teas, refreshing
-            juices,
-            etc. Whether you're craving a cheese burger, a loaded pizza, or a refreshing iced tea, we have
-            something
-            to satisfy every plate.
-        </p>
-        <div class="d-flex flex-row justify-content-evenly mb-3">
-            <div>
-                <img src="../images/dislike.png" class="quantity" onclick="dec()" />
-                <span id="num2">0 </span>
-            </div>
-            <div>
-                <img src="../images/like.png" class="quantity" onclick="inc()" />
-                <span id="num1">152</span>
-            </div>
-        </div>
-
-    </div>
-    
-
     <div class="container">
-        <h1 class="text-center font-heading2 my-3">Gallery</h1>
-        <div class="row d-flex gall1 mx-auto justify-content-evenly">
-            <div class="gallery-item col-md-3 card p-2 galley" onclick="event1()">
-                <img src="../images/bday1zm.jpg" alt="" class="img-fluid mb-2">
-                <h3 class="text-center font-heading fs-3">Events</h3>
-                <p class="text-muted text-center"> Events Condcted</p>
-            </div>
-            <div class="gallery-item col-md-3 card p-2 galley" onclick="cafe()">
-                <img src="../images/cafe1.jpg" alt="" class="img-fluid mb-2">
-                <h3 class="text-center font-heading fs-3">Cafe</h3>
-                <p class="text-muted text-center"> Cafe look</p>
-            </div>
-            <div class="gallery-item col-md-3 card p-2 galley" onclick="rooftop()">
-                <img src="../images/rooftop.jpg" alt="" class="img-fluid mb-2">
-                <h3 class="text-center font-heading fs-3">Roof Top</h3>
-                <p class="text-muted text-center">Rooftop special</p>
-            </div>
+        <h1>Order Form</h1>
+        <form id="orderForm">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pincode</label>
+                    <input type="text" class="form-control" id="pincode" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Menu</legend>
+                <div class="form-group">
+                    <label for="drinks">Drinks</label>
+                    <select class="form-control" id="drinks">
+                        <option value="">Select Drink</option>
+                        <option value="Cold Coffee">Cold Coffee - ₹80</option>
+                        <option value="Mocktail">Mocktail - ₹120</option>
+                    </select>
+                </div>
+                <div class="form-group" id="drink-quantity-section" style="display: none;">
+                    <label for="drink-quantity">Drink Quantity</label>
+                    <input type="number" class="form-control" id="drink-quantity" min="1">
+                </div>
+                <div class="form-group" id="food-section" style="display: none;">
+                    <label for="food">Food</label>
+                    <select class="form-control" id="food">
+                        <option value="">Select Food</option>
+                        <option value="Pizza">Pizza - ₹250</option>
+                        <option value="Burger">Burger - ₹350</option>
+                        <option value="Rolls">Rolls - ₹150</option>
+                        <option value="Fries">Fries - ₹150</option>
+                    </select>
+                </div>
+                <div class="form-group" id="food-quantity-section" style="display: none;">
+                    <label for="food-quantity">Food Quantity</label>
+                    <input type="number" class="form-control" id="food-quantity" min="1">
+                </div>
+            </fieldset>
+            <button type="button" class="btn btn-primary" id="submitOrder">Submit Order</button>
+        </form>
+
+        <div class="order-section">
+            <h2>Your Orders</h2>
+            <table class="table table-bordered order-table">
+                <thead>
+                    <tr>
+                        <th>Sr. No</th>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Cost</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="orderList"></tbody>
+            </table>
+        </div>
+
+        <button type="button" class="btn btn-success" id="placeOrder">Place Order</button>
+
+        <div class="summary-section" id="orderSummary">
+            <h2>Order Summary</h2>
+            <p id="orderMessage"></p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Sr. No</th>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody id="summaryList"></tbody>
+            </table>
         </div>
     </div>
-    <div id="imgss" class="gall mx-4 mt-3">
 
-    </div>
-
-
-
-
-    <h2 class="text-center fs-1 font-heading2 mt-5">Testimonials</h2>
-    <div class="test-card background">
-        <div>
-            <img src="../images/test1.jpg" class="test-img" id="test-image" />
-        </div>
-        <div class="test-text">
-            <h3 class="fs-3 text-danger" id="test-subheading">Great Place</h3>
-            <p class="card-text text-center" id="test-text">The ambiance at Café Evening is simply magical. From the
-                soft glow of the lights to the cozy seating arrangements, it's the perfect place to unwind after a long
-                day. And let's not forget the coffee – absolutely divine!
-            </p>
-            <p id="test-name" class="text-primary-emphasis">~Anjali Dhamdhere</p>
-        </div>
-    </div>
-    <div class="button-container">
-        <button type="button" class="selector" id="btn-1" onclick="test1()"> </button>
-        <button type="button" class="selector" id="btn-2" onclick="test2()"> </button>
-        <button type="button" class="selector" id="btn-3" onclick="test3()"> </button>
-        <button type="button" class="selector" id="btn-4" onclick="test4()"> </button>
-    </div><br />
-
-
-    <h2 class="text-center font-heading2 fs-1">Want to view our location?</h2>
-    <a href="https://shorturl.at/rwxEI" class="text-decoration-none" target="_blank">
-        <button type="button" class="btn btn-outline-dark d-block mx-auto m-3">
-            Click Here
-        </button>
-    </a>
 
     <!--footer-->
     <div class="bg-dark bg-gradient text-light p-4">
@@ -252,7 +230,7 @@
     </div>
     <!--end of footer-->
 
-    <script src="../js/aboutus.js"></script>
+    <script src="../js/order.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
