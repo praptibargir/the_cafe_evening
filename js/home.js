@@ -65,7 +65,7 @@ function createMenuItems() {
             <div class="menu-item">
                 <img src="${item.image}" alt="${item.name}" class="img-fluid mb-2">
                 <h3>${item.name}</h3>
-                <p class="text-muted">${item.description}</p>
+                <p>${item.description}</p>
                 <p>Cost: ${item.cost}</p>
             </div>
         `;
