@@ -152,6 +152,13 @@ function inc() {
     quantityText.innerText = ++quantity;
   }
   imagechange(quantity);
+
+  let quantitybef=quantity-1;
+  imagebef(quantitybef);
+
+  
+  let quantityaft=quantity+1;
+  imageaft(quantityaft);
 }
 
 function dec() {
@@ -161,11 +168,102 @@ function dec() {
     quantityText.innerText = --quantity;
   }
   imagechange(quantity);
+
+  let quantityaft=quantity+1;
+  imageaft(quantityaft);
+
+  let quantitybef=quantity-1;
+  imagebef(quantitybef);
 }
 
 function imagechange(quantity) {
-  const image = document.getElementById("menuimg");
+  const image = document.getElementById("menuimg2");
   switch (quantity) {
+    case 1:
+      image.src = "../images/menu2.jpg";
+      break;
+    case 2:
+      image.src = "../images/menu3.jpg";
+      break;
+    case 3:
+      image.src = "../images/menu4.jpg";
+      break;
+    case 4:
+      image.src = "../images/menu5.jpg";
+      break;
+    case 5:
+      image.src = "../images/menu6.jpg";
+      break;
+    case 6:
+      image.src = "../images/menu7.jpg";
+      break;
+    case 7:
+      image.src = "../images/menu8.jpg";
+      break;
+    case 8:
+      image.src = "../images/menu9.jpg";
+      break;
+    case 9:
+      image.src = "../images/menu10.jpg";
+      break;
+    case 10:
+      image.src = "../images/menu11.jpg";
+      break;
+    case 11:
+      image.src = "../images/menu12.jpg";
+      break;
+    case 12:
+      image.src = "../images/menu13.jpg";
+      break;
+  }
+}
+
+function imagebef(quantitybef) {
+  const image = document.getElementById("menuimg1");
+  switch (quantitybef) {
+    case 1:
+      image.src = "../images/menu2.jpg";
+      break;
+    case 2:
+      image.src = "../images/menu3.jpg";
+      break;
+    case 3:
+      image.src = "../images/menu4.jpg";
+      break;
+    case 4:
+      image.src = "../images/menu5.jpg";
+      break;
+    case 5:
+      image.src = "../images/menu6.jpg";
+      break;
+    case 6:
+      image.src = "../images/menu7.jpg";
+      break;
+    case 7:
+      image.src = "../images/menu8.jpg";
+      break;
+    case 8:
+      image.src = "../images/menu9.jpg";
+      break;
+    case 9:
+      image.src = "../images/menu10.jpg";
+      break;
+    case 10:
+      image.src = "../images/menu11.jpg";
+      break;
+    case 11:
+      image.src = "../images/menu12.jpg";
+      break;
+    case 12:
+      image.src = "../images/menu13.jpg";
+      break;
+  }
+}
+
+
+function imageaft(quantityaft) {
+  const image = document.getElementById("menuimg3");
+  switch (quantityaft) {
     case 1:
       image.src = "../images/menu2.jpg";
       break;
@@ -227,3 +325,9 @@ function offer1() {
   }
 }
 setInterval(offer1, 1000);
+
+function img3(){
+  const quantity=document.getElementById("quant");
+  let quant= parseInt(quantity)+1;
+  images(quant);
+}
