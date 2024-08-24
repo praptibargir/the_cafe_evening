@@ -3,6 +3,7 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 .menu-item img {
@@ -76,6 +77,9 @@
     .cent{
         display: none;
     }
+    .menuimg2{
+        display: none;
+    }
 
 }
 
@@ -109,6 +113,9 @@
         height: 300px;
     }
     .cent{
+        display: none;
+    }
+    .menuimg2{
         display: none;
     }
 }
@@ -145,6 +152,9 @@
     .cent{
         display: none;
     }
+    .menuimg2{
+        display: none;
+    }
 }
 
 .menu-list:hover{
@@ -164,7 +174,7 @@ h1 {
 }
 img {
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 p {
     font-size: 18px;

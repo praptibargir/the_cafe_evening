@@ -43,7 +43,7 @@ function createMenuItems1() {
     menuItem.classList.add("menu-item", "card", "d-flex", "flex-row", "text-decoration-none", "menu-list");
     menuItem.href = item.name.toLowerCase().replace(' ', '') + '.html';
     menuItem.innerHTML = `
-      <img src="${item.image}" alt="${item.name}">
+      <img src="${item.image}" alt="${item.name} class="img">
       <div class="menu-item-content card-body">
         <h3 class="card-title">${item.name}</h3>
         <p class="card-text">${item.description}</p>
@@ -303,7 +303,7 @@ function imageaft(quantityaft) {
   }
 }
 
-const eventDate = new Date('2024-06-15T00:00:00+05:30');
+const eventDate = new Date('2024-09-15T00:00:00+05:30');
 function updateCountdown() {
   const currentDate = new Date();
   const difference = eventDate - currentDate;
@@ -324,7 +324,7 @@ function offer1() {
     blink.style.display = 'none';
   }
 }
-setInterval(offer1, 1000);
+setInterval(offer1, 1500);
 
 function img3(){
   const quantity=document.getElementById("quant");
